@@ -1,0 +1,8 @@
+{
+    "question": "List online undergraduate courses.",
+    "sql": "SELECT term_code, crn, course_title FROM v_section_tally WHERE UPPER(schd_desc) LIKE :modality AND course_level = :level FETCH FIRST 1000 ROWS ONLY",
+    "binds": {
+      ":modality": "%ONLINE%",
+      ":level": "UG"
+    }
+  }
