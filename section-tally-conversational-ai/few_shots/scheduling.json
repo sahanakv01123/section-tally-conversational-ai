@@ -1,8 +1,0 @@
-{
-    "question": "Show courses that are not taught on Monday or Wednesday.",
-    "sql": "SELECT term_code, crn, course_title, schd_days FROM v_section_tally WHERE schd_days NOT LIKE :mon AND schd_days NOT LIKE :wed FETCH FIRST 1000 ROWS ONLY",
-    "binds": {
-      ":mon": "%M%",
-      ":wed": "%W%"
-    }
-  }

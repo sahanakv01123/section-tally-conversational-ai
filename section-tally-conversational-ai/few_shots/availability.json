@@ -1,8 +1,0 @@
-{
-    "question": "Which courses have open seats for a given term?",
-    "sql": "SELECT term_code, crn, course_title, available FROM v_section_tally WHERE term_code = :term AND available > :min_available FETCH FIRST 1000 ROWS ONLY",
-    "binds": {
-      ":term": "<TERM_CODE>",
-      ":min_available": 0
-    }
-  }
