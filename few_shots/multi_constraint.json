@@ -1,0 +1,14 @@
+{
+    "question": "What courses are taught only on Monday, have no prerequisites, and are taught in a specific building?",
+    "sql": "...",
+    "binds_template": {
+      ":day": "<DAY_CODE>",
+      ":empty": "<EMPTY_STRING>",
+      ":bldg": "<BUILDING_PATTERN>"
+    },
+    "binds_example": {
+      ":day": "M",
+      ":empty": "",
+      ":bldg": "%JOHNSON%"
+    }
+  }
